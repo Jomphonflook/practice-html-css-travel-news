@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="slick.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script>
+        function hideDiv() {
+            var sub = document.getElementById('sub-nav')
+            sub.classList.add("sub-nav-close")
+            setTimeout(() => {
+                document.getElementsByClassName("nav-open")[0].style.display = "none";
+            }, 700);
+
+        }
+        function openDiv() {
+            var sub = document.getElementById('sub-nav')
+            document.getElementsByClassName("nav-open")[0].style.display = "block";
+            sub.classList.remove("sub-nav-close")
+            sub.classList.add("sub-nav-open")
+        }
+    </script>
+</head>
+
+<body>
+    <div class="nav-open">
+        <div onclick="hideDiv()" class="bg-nav-open">
+        </div>
+        <div id="sub-nav">
+            <!-- <button onclick="hideDiv()">CLOSE</button> -->
+        </div>
+    </div>
+    <header>
+        <nav>
+            <button onclick="openDiv()" id="list_menu_icon" href="#"><i
+                    class="fa-solid fa-list-ul listnav"></i></button>
+            <div>
+                <div>
+                    <img src="./image/Vector.png" alt="img">
+                </div>
+                <div>
+                    Travel Day.com
+                </div>
+            </div>
+            <div>
+                <ul id="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Discover</a></li>
+                    <li><a href="">Photo</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <div>
+                    <a href="#"><img src="./image/profile.png" alt="img"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="top-bg" style="background-image: url(./image/Rectangle\ 1.png);">
+        <!-- <img src="./image/Rectangle 1.png" alt="img"> -->
+        <div class="top-info">
+            <div>
+                <h1>
+                    TRAVEL NEWS
+                </h1>
+                <hr>
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quaerat cumque commodi eaque expedita
+                    aliquam soluta quis totam laboriosam eum in cupiditate deserunt qui temporibus facilis, repellendus
+                    maxime culpa voluptatibus unde asperiores rem tempore id tenetur debitis. Aperiam, vel nemo!
+                </div>
+                <h1>
+                    Get 10% Off on your next travel
+                </h1>
+                <div class="email-enter-info">
+                    <input type="text" name="" id="" placeholder="Enter your E-mail" color="white">
+                    <button>
+                        <div>
+                            SUBSCRIBE
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div>
+                <h1>
+                    MORE NEWS
+                </h1>
+                <hr>
+                <div class="carousel-view">
+                    <div class="box">
+                        <h2>
+                            TRAVEL NEWS
+                        </h2>
+                        <div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nisi ut quos ex inventore
+                            quisquam odit est repellat odio magnam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nisi ut quos ex inventore
+                            quisquam odit est repellat odio magnam.
+
+                        </div>
+                        <h2>
+                            TRAVEL NEWS
+                        </h2>
+                        <div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nisi ut quos ex inventore
+                            quisquam odit est repellat odio magnam.
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2>
+                            TRAVEL NEWS
+                        </h2>
+                        <div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nisi ut quos ex inventore
+                            quisquam odit est repellat odio magnam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nisi ut quos ex inventore
+                            quisquam odit est repellat odio magnam.
+
+                        </div>
+                        <h2>
+                            TRAVEL NEWS
+                        </h2>
+                        <div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nisi ut quos ex inventore
+                            quisquam odit est repellat odio magnam.
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2>
+                            TRAVEL NEWS
+                        </h2>
+                        <div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nisi ut quos ex inventore
+                            quisquam odit est repellat odio magnam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nisi ut quos ex inventore
+                            quisquam odit est repellat odio magnam.
+
+                        </div>
+                        <h2>
+                            TRAVEL NEWS
+                        </h2>
+                        <div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nisi ut quos ex inventore
+                            quisquam odit est repellat odio magnam.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="space">
+        <div class="space-more-news">
+            <h1>
+                MORE NEWS
+            </h1>
+            <hr>
+            <div>
+                <div class="space-more-news-box">
+                    <div>
+                        <div class="travel-news-info">
+                            <h3>
+                                TRAVEL NEWS
+                            </h3>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi eos, ab facilis earum
+                                beatae ratione ipsa voluptatibus quisquam, hic voluptatum sit non fugit accusantium illo
+                                vel dolor porro placeat in magni libero consequatur. Autem, temporibus. Dolore explicabo
+                                accusamus recusandae aut?
+                            </div>
+                        </div>
+                        <div class="travel-news-info">
+                            <h3>
+                                TRAVEL NEWS
+                            </h3>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi eos, ab facilis earum
+                                beatae ratione ipsa voluptatibus quisquam, hic voluptatum sit non fugit accusantium illo
+                                vel dolor porro placeat in magni libero consequatur. Autem, temporibus. Dolore explicabo
+                                accusamus recusandae aut?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-more-news-box">
+                    <div>
+                        <div class="travel-news-info">
+                            <h3>
+                                TRAVEL NEWS
+                            </h3>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi eos, ab facilis earum
+                                beatae ratione ipsa voluptatibus quisquam, hic voluptatum sit non fugit accusantium illo
+                                vel dolor porro placeat in magni libero consequatur. Autem, temporibus. Dolore explicabo
+                                accusamus recusandae aut?
+                            </div>
+                        </div>
+                        <div class="travel-news-info">
+                            <h2>
+                                TRAVEL NEWS
+                            </h2>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi eos, ab facilis earum
+                                beatae ratione ipsa voluptatibus quisquam, hic voluptatum sit non fugit accusantium illo
+                                vel dolor porro placeat in magni libero consequatur. Autem, temporibus. Dolore explicabo
+                                accusamus recusandae aut?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-more-news-box">
+                    <div>
+                        <div class="travel-news-info">
+                            <h3>
+                                TRAVEL NEWS
+                            </h3>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi eos, ab facilis earum
+                                beatae ratione ipsa voluptatibus quisquam, hic voluptatum sit non fugit accusantium illo
+                                vel dolor porro placeat in magni libero consequatur. Autem, temporibus. Dolore explicabo
+                                accusamus recusandae aut?
+                            </div>
+                        </div>
+                        <div class="travel-news-info">
+                            <h2>
+                                TRAVEL NEWS
+                            </h2>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi eos, ab facilis earum
+                                beatae ratione ipsa voluptatibus quisquam, hic voluptatum sit non fugit accusantium illo
+                                vel dolor porro placeat in magni libero consequatur. Autem, temporibus. Dolore explicabo
+                                accusamus recusandae aut?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="discovery">
+            <div>DISCOVERY</div>
+            <div id="fix-dis" class="discovery-fix">
+                <div class="discovery-box">
+                    <img src="/image/Discovery-F.png" alt="img">
+                    <div>
+                        <h3>
+                            Lorem, ipsum dolor.
+                        </h3>
+                        <div>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea non numquam voluptas
+                            exercitationem veritatis impedit nulla quod facere eius fugiat.
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                            <div>
+                                2 day ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="discovery-box">
+                    <img src="/image/Discovery-S.png" alt="img">
+                    <div>
+                        <h3>
+                            Lorem, ipsum dolor.
+                        </h3>
+                        <div>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea non numquam voluptas
+                            exercitationem veritatis impedit nulla quod facere eius fugiat.
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                            <div>
+                                2 day ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="discovery-box">
+                    <img src="/image/Discovery-T.png" alt="img">
+                    <div>
+                        <h3>
+                            Lorem, ipsum dolor.
+                        </h3>
+                        <div>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea non numquam voluptas
+                            exercitationem veritatis impedit nulla quod facere eius fugiat.
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                            <div>
+                                2 day ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="slide-dis" class="discovery-slide">
+                <div class="discovery-box-slide">
+                    <img src="/image/Discovery-F.png" alt="img">
+                    <div>
+                        <h3>
+                            Lorem, ipsum dolor.
+                        </h3>
+                        <div>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea non numquam voluptas
+                            exercitationem veritatis impedit nulla quod facere eius fugiat.
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                            <div>
+                                2 day ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="discovery-box-slide">
+                    <img src="/image/Discovery-S.png" alt="img">
+                    <div>
+                        <h3>
+                            Lorem, ipsum dolor.
+                        </h3>
+                        <div>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea non numquam voluptas
+                            exercitationem veritatis impedit nulla quod facere eius fugiat.
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                            <div>
+                                2 day ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="discovery-box-slide">
+                    <img src="/image/Discovery-T.png" alt="img">
+                    <div>
+                        <h3>
+                            Lorem, ipsum dolor.
+                        </h3>
+                        <div>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea non numquam voluptas
+                            exercitationem veritatis impedit nulla quod facere eius fugiat.
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                            <div>
+                                2 day ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="photograph">
+            <div>
+                <div class="main-pg">
+                    <div>
+                        MAIN 1
+                    </div>
+                    <div>
+                        MAIN 2
+                    </div>
+                </div>
+                <div class="sub-pg-fix">
+                    <div>SUB 1</div>
+                    <div>SUB 2</div>
+                    <div>SUB 3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery.js">  </script>
+    <script src="./js/slick.min.js">  </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            const height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+            console.log('Screen resolution:', width, 'x', height);
+        });
+
+        $('.carousel-view').slick({});
+        $('.space-more-news > div').slick({});
+        $('.discovery-slide').slick({
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            prevArrow: '<div class="slick-prev-discovery"></div>',
+            nextArrow: '<div class="slick-next-discovery"></div>',
+            responsive: [
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>
