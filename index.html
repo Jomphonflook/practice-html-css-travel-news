@@ -14,15 +14,15 @@
     <title>Document</title>
     <script>
         function hideDiv() {
-            var sub = document.getElementById('sub-nav')
+            var sub = document.getElementById('sub-nav-id')
             sub.classList.add("sub-nav-close")
             setTimeout(() => {
                 document.getElementsByClassName("nav-open")[0].style.display = "none";
-            }, 700);
+            }, 500);
 
         }
         function openDiv() {
-            var sub = document.getElementById('sub-nav')
+            var sub = document.getElementById('sub-nav-id')
             document.getElementsByClassName("nav-open")[0].style.display = "block";
             sub.classList.remove("sub-nav-close")
             sub.classList.add("sub-nav-open")
@@ -34,8 +34,21 @@
     <div class="nav-open">
         <div onclick="hideDiv()" class="bg-nav-open">
         </div>
-        <div id="sub-nav">
-            <!-- <button onclick="hideDiv()">CLOSE</button> -->
+        <div id="sub-nav-id">
+            <div>
+                <img src="./image/Vector.png" alt="img">
+                Travel Day.com
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Photo</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <footer>
+                <img src="./image/Vector.png" alt="img">
+                Travel Day.com
+            </footer>
         </div>
     </div>
     <header>
@@ -358,19 +371,131 @@
             </div>
         </div>
         <div class="photograph">
+            <h1>PHOTOGRAPH</h1>
             <div>
                 <div class="main-pg">
                     <div>
-                        MAIN 1
+                        <h1>HAPPENING NOW. </h1>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aut impedit labore iure
+                            optio nam placeat? Quas mollitia sapiente cum nesciunt inventore tempore facilis architecto,
+                            harum eum perspiciatis, dolore quasi accusamus assumenda voluptates vitae saepe aut
+                            laboriosam placeat id exercitationem beatae optio est dolorem officiis? Minima vero dolores
+                            quam praesentium?</div>
                     </div>
                     <div>
-                        MAIN 2
+                        <h1>HAPPENING NOW. </h1>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aut impedit labore iure
+                            optio nam placeat? Quas mollitia sapiente cum nesciunt inventore tempore facilis architecto,
+                            harum eum perspiciatis, dolore quasi accusamus assumenda voluptates vitae saepe aut
+                            laboriosam placeat id exercitationem beatae optio est dolorem officiis? Minima vero dolores
+                            quam praesentium?</div>
                     </div>
                 </div>
-                <div class="sub-pg-fix">
-                    <div>SUB 1</div>
-                    <div>SUB 2</div>
-                    <div>SUB 3</div>
+                <div id="sub-pg-fix-id" class="sub-pg-fix">
+                    <div>
+                        <div></div>
+                        <div>
+                            <h3>
+                                Lorem, ipsum dolor.
+                            </h3>
+                            <div>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea non numquam voluptas
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-clock"></i>
+                                <div>
+                                    2 day ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div>
+                            <h3>
+                                Lorem, ipsum dolor.
+                            </h3>
+                            <div>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea non numquam voluptas
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-clock"></i>
+                                <div>
+                                    2 day ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div>
+                            <h3>
+                                Lorem, ipsum dolor.
+                            </h3>
+                            <div>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea non numquam voluptas
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-clock"></i>
+                                <div>
+                                    2 day ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sub-pg-slide-id" class="sub-pg-slide">
+                <div class="box-pg-slide">
+                    <img src="/image/sub1.png" alt="img">
+                    <div>
+                        <h3>
+                            Lorem, ipsum dolor.
+                        </h3>
+                        <div>
+                            Lorem ipsum dolor sit amet tetur adipisicing elit
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                            <div>
+                                2 day ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-pg-slide">
+                    <img src="/image/sub2.png" alt="img">
+                    <div>
+                        <h3>
+                            Lorem, ipsum dolor.
+                        </h3>
+                        <div>
+                            Lorem ipsum dolor sit amet tetur adipisicing elit
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                            <div>
+                                2 day ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-pg-slide">
+                    <img src="/image/sub3.png" alt="img">
+                    <div>
+                        <h3>
+                            Lorem, ipsum dolor.
+                        </h3>
+                        <div>
+                            Lorem ipsum dolor sit amet tetur adipisicing elit
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                            <div>
+                                2 day ago
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -379,12 +504,6 @@
     <script src="./js/jquery.js">  </script>
     <script src="./js/slick.min.js">  </script>
     <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-            const height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-            console.log('Screen resolution:', width, 'x', height);
-        });
-
         $('.carousel-view').slick({});
         $('.space-more-news > div').slick({});
         $('.discovery-slide').slick({
@@ -401,6 +520,10 @@
                     }
                 }
             ]
+        });
+        $('.sub-pg-slide').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
         });
     </script>
 </body>
