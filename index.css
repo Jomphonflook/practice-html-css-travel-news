@@ -8,7 +8,18 @@
 }
 
 body {
-    min-height: 1000px;
+    min-height: 200px;
+}
+footer {
+    color: white;
+    background-color: black;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > img {
+        margin: 0px 5px;
+    }
 }
 
 .nav-open {
@@ -70,10 +81,10 @@ body {
         }
     }
     > footer {
-        border: 1px solid green;
-        color: white;
+        border: none;
         background-color: black;
         height: 60px;
+        width: inherit;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -316,7 +327,8 @@ button {
 .space {
     background-color: white;
     width: 100%;
-    min-height: inherit;
+    min-height: 1500px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: start;
     align-items: center;
